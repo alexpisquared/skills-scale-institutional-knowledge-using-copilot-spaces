@@ -1,24 +1,41 @@
 # OctoAcme Project Management Docs
 
-This README is the central entry point for OctoAcme project management documentation. It summarizes the end-to-end process and links to each detailed guide.
+Use this README as the onboarding entry point to how OctoAcme plans and delivers work. For full process details, follow the linked guides below.
 
-## Project Management Process Summary
+## 1) Lifecycle at a glance
 
-OctoAcme uses a lightweight, iterative project management approach across the full project lifecycle.
+OctoAcme runs projects through a consistent lifecycle: **initiation → planning → execution → release → retrospective improvement**.
 
-**Initiation** — New work begins with a one-pager covering the problem, goal, and success metrics. Stakeholders are aligned, initial risks are identified, and a go/no-go decision gates further investment.
+## 2) Core workflows
 
-**Planning** — Approved work is translated into a prioritized backlog with acceptance criteria, effort estimates, dependencies, milestones, and a documented Definition of Done, creating a shared operating model for iterative delivery.
+- Start with a one-pager/charter that defines the problem, goals, success metrics, and initial risks.
+- Convert approved work into a prioritized backlog with acceptance criteria, estimates, dependencies, and milestones.
+- Move delivery work through the project board: **Backlog → Ready → In Progress → In Review → QA → Done**.
+- Keep PRs small, link them to issues/acceptance criteria, and require CI checks before review.
+- Use release checklists before deployment.
 
-**Roles & Ownership** — Project Managers coordinate delivery, timelines, and risk; Product Managers own outcomes and prioritization; Developers implement and surface technical risk; QA validates acceptance criteria; and Stakeholders provide input and approvals.
+## 3) Roles and ownership
 
-**Execution & Tracking** — Teams operate a consistent cadence: daily standups for blockers, weekly delivery syncs, sprint-end demos/reviews, and monthly stakeholder updates. Work moves through a project board (Backlog → Ready → In Progress → In Review → QA → Done). Structured weekly status updates and a clear escalation path (team triage → PM/Product Lead → sponsor) keep communication transparent.
+- **Project Managers** coordinate delivery, timelines, dependencies, and risk.
+- **Product Managers** define desired outcomes and prioritize backlog work.
+- **Developers** implement, test, and document changes.
+- **QA** validates acceptance criteria and release readiness.
+- **Stakeholders** provide domain input, decisions, and approvals.
 
-**Quality** — Small PRs, explicit acceptance criteria, automated CI checks (tests, lint, security scans), and required review approvals are mandatory before merge. Testing covers unit, integration, and E2E smoke tests for critical flows. Releases require readiness checks, rollback planning, staging validation, and post-deploy verification.
+## 4) Communication and risk management
 
-**Retrospective & Continuous Improvement** — After each sprint, release, or incident, retrospectives convert lessons learned into owned, trackable action items to reduce repeat failures and drive ongoing improvement.
+- Use regular standups, weekly delivery syncs, demos, and status templates.
+- Follow a clear escalation path: **team triage → PM/Product Lead → sponsor**.
+- Maintain a living risk register with owners and mitigation plans.
 
-## Documentation Index
+## 5) Quality and release readiness
+
+- Validate with unit and integration tests, plus smoke tests for critical flows.
+- Run CI quality gates including security scanning before merge/release.
+- Include manual QA where needed, documented rollback plans, and post-deploy checks.
+- Run post-release retrospectives and track action items to completion.
+
+## 6) Detailed process docs
 
 - [OctoAcme Project Management Overview](octoacme-project-management-overview.md)
 - [OctoAcme — Project Initiation Guide](octoacme-project-initiation.md)
